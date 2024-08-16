@@ -1,5 +1,6 @@
 import Image from "next/image";
-import AddCustomer from "./components/AddCustomer";
+import AddCustomer from "./add/AddCustomer";
+import Total from "./components/Total";
 
 interface HomeConst{
 
@@ -9,7 +10,8 @@ const Home = () => {
   
   return (
     <main className="">
-      <AddCustomer/>
+      <Total/>
+     
     </main>
   );
 }

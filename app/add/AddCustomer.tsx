@@ -3,6 +3,7 @@ import React from 'react'
 import { toast } from 'react-toastify'
 import { useRef } from 'react'
 import addCustomer from '../actions/addCustomer';
+import Link from 'next/link';
 const AddCustomer = () => {
     const formRef = useRef<HTMLFormElement>(null);
     const clientAction = async (formData: FormData) => {
@@ -17,7 +18,10 @@ const AddCustomer = () => {
     }
     return (
         <main className=' border items-center py-10 lg:mx-[10%] xl:mx-[20%] md:mx-[8%] mx-[6%] px-5 mt-[12%] mb-[40px] bg-gray-50 rounded-lg shadow-md'>
-            <h3 className="text-2xl font-semibold mb-6 text-gray-800">Add New Customer</h3>
+            <div className='flex  justify-between items-center mb-6'>
+                <h3 className="text-center md:text-2xl font-semibold  text-gray-800">Add New Customer</h3>
+                <Link href={'/'} className='text-center md:text-lg shadow p-2 rounded-full bg-gray-500 text-white'> {'< All Customers'}</Link>
+            </div>
             <form className='grid grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4' ref={formRef} action={clientAction}>
                 <div className="form-control">
                     <label htmlFor="text">First Name</label>
