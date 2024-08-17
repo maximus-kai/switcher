@@ -16,7 +16,7 @@ async function getInstallations(): Promise<{
             },
         });
         console.log(installations);
-        return { installations };
+        return {installations};
     } catch (error) {
         return { error: "Database Error" };
     }

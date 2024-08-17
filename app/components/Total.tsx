@@ -9,14 +9,14 @@ const Total = async () => {
     // Check for errors
     if (error) {
         return (
-            <main className='border items-center text-2xl py-6 lg:mx-[10%] xl:mx-[20%] md:mx-[8%] mx-[6%] px-5 mt-[12%] mb-[40px] bg-gray-50 rounded-lg shadow-md flex flex-col '>
+            <main className='border items-center text-2xl py-6 lg:mx-[10%] xl:mx-[20%] md:mx-[8%] mx-[2%] px-5 mt-[2%] mb-[40px] bg-gray-50 rounded-lg shadow-md flex flex-col '>
                 <h2 className='text-center'>Error: {error}</h2>
             </main>
         );
     }
 
     return (
-        <main className='border items-center justify-between text-2xl py-6 lg:mx-[10%] xl:mx-[20%] md:mx-[8%] mx-[6%] px-5 mt-[12%] mb-[40px] bg-gray-50 rounded-lg shadow-md flex flex-row '>
+        <main className='border items-center justify-between text-2xl py-6 lg:mx-[10%] xl:mx-[8%] md:mx-[8%] mx-[6%] px-5 mt-[2%] mb-[40px] bg-gray-50 rounded-lg shadow-md flex flex-row '>
             <div className='flex flex-col '>
             <h2 className=' text-center font-bold'>Customers</h2>
                 <h2 className='mt-2 text-4xl text-center border shad rounded-full'>{total}</h2>
