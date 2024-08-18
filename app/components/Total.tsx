@@ -17,13 +17,13 @@ const Total = async () => {
     }
 
     return (
-        <main className='border items-center gap-6 justify-center sm:justify-between text-2xl py-6 lg:mx-[10%] xl:mx-[8%] md:mx-[8%] mx-[6%] px-5 mt-[2%] mb-[40px] bg-gray-50 rounded-lg shadow-md flex flex-wrap flex-row '>
+        <main className='border items-center gap-6 justify-center sm:justify-center space-x-[200px] text-2xl py-6 lg:mx-[10%] xl:mx-[8%] md:mx-[8%] mx-[6%] px-5 mt-[2%] mb-[40px] bg-gray-50 rounded-lg shadow-md flex flex-wrap flex-row '>
             <div className='flex flex-col '>
             <h2 className=' text-center font-bold'>Customers</h2>
-                <h2 className='mt-2 text-4xl text-center border shad rounded-full'>{total}</h2>
+                <h2 className='mt-2 text-4xl bg-white font-semibold text-center border shad rounded-full'>{total}</h2>
             </div>
             <SearchInstallation/>
-            <Link href={'/add'} className='text-lg shadow p-2 rounded-full bg-gray-500 text-white'>{'Add Customer >'}</Link>
+            {/* <Link href={'/add'} className='text-lg shadow p-2 rounded-full bg-gray-500 text-white'>{'Add Customer >'}</Link> */}
         </main>
     );
 };

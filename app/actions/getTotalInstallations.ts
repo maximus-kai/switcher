@@ -7,7 +7,7 @@ async function getTotalInstallations(): Promise<{
 }>{
     try {
         const total = await db.installation.count();
-        console.log(total);
+        // console.log(total);
         return {total}
     } catch (error) {
         return {error: "Database Error"}

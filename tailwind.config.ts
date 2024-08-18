@@ -15,6 +15,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+     require('daisyui'), // Add DaisyUI here
+  ],
+  daisyui: {
+    themes: ["light"], // You can customize the themes here
+  },
 };
 export default config;

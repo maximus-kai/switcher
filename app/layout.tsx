@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
+import Dashboard from "./components/Dashboard";
 
 const robRoboto = Roboto({ subsets: ["latin"], weight:'400' });
 
@@ -18,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={robRoboto.className}>{children}
+      <body  className={`${robRoboto.className}, `}>
+        <Dashboard/>
+        {children}
         <ToastContainer/>
       </body>
     </html>
