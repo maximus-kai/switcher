@@ -16,7 +16,7 @@ const Dashboard = () => {
             <AiOutlineDingding className='text-6xl py-[10px] text-orange-700 ' />
             {
                 link.map((eachlink) => (
-                    <Link href={eachlink.href} className={`${eachlink.href === currentpath ? 'text-orange-900' : 'text-gray-600'} cursor-pointer  hover:text-slate-400`}>{eachlink.label}</Link>
+                    <Link key={eachlink.href} href={eachlink.href} className={`${eachlink.href === currentpath ? 'text-orange-900' : 'text-gray-600'} cursor-pointer  hover:text-slate-400`}>{eachlink.label}</Link>
                 ))
             }
         </main>
